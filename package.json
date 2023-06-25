@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "tsx src/index.ts",
-    "generate": "drizzle-kit generate:mysql --out migrations-folder --schema src/db/schema/*",
+    "generate": "drizzle-kit generate:mysql --out migrations --schema src/db/schema/*",
     "migrate": "tsx migrate.ts"
   }
 }

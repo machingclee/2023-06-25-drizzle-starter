@@ -14,7 +14,7 @@ const poolConnection = mysql.createPool({
 
 const db = drizzle(poolConnection, { logger: true });
 
-migrate(db, { migrationsFolder: 'migrations-folder' }).then(() => {
+migrate(db, { migrationsFolder: 'migrations' }).then(() => {
   process.exit(0);
 })
 
